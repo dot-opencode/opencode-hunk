@@ -1,0 +1,39 @@
+{
+  "name": "opencode-hunk",
+  "version": "0.1.0",
+  "description": "OpenCode plugin integrating the hunk terminal diff viewer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dot-opencode/opencode-hunk.git"
+  },
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./server": "./src/index.ts",
+    "./tui": "./src/tui.ts"
+  },
+  "files": [
+    "index.ts",
+    "tui.ts",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@opencode/plugin": "2.0.26"
+  },
+  "devDependencies": {
+    "@opentui/core": "0.5.16",
+    "@opentui/solid": "0.5.16",
+    "@types/bun": "1.4.2",
+    "@types/node": "26.6.5",
+    "solid-js": "1.9.15",
+    "typescript": "5.8.2"
+  }
+}
