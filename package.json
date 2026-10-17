@@ -1,6 +1,6 @@
 {
   "name": "opencode-hunk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OpenCode plugin integrating the hunk terminal diff viewer",
   "license": "MIT",
   "repository": {
@@ -28,9 +28,14 @@
   "dependencies": {
     "@opencode/plugin": "2.0.26"
   },
+  "peerDependencies": {
+    "@opentui/core": ">=0.5.17",
+    "@opentui/solid": ">=0.5.17",
+    "solid-js": ">=1.9.0"
+  },
   "devDependencies": {
-    "@opentui/core": "0.5.16",
-    "@opentui/solid": "0.5.16",
+    "@opentui/core": "0.5.17",
+    "@opentui/solid": "0.5.17",
     "@types/bun": "1.4.2",
     "@types/node": "26.6.5",
     "solid-js": "1.9.15",
